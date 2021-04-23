@@ -15,9 +15,12 @@ pipeline {
           }
         }
 
-        stage('') {
+        stage('error') {
           steps {
-            echo 'another one.'
+            sh '''#!/bin/sh
+# This is a comment!
+echo Hello World        # This is a comment, too!
+'''
           }
         }
 
