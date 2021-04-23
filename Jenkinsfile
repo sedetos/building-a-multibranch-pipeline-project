@@ -15,6 +15,12 @@ pipeline {
           }
         }
 
+        stage('finalstep.') {
+          steps {
+            echo 'Wow, that was easy.'
+          }
+        }
+
       }
     }
 
