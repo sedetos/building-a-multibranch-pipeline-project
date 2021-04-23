@@ -15,16 +15,16 @@ pipeline {
           }
         }
 
-        stage('error') {
+        stage('') {
           steps {
-            dir(path: '/home/ec2-user/github/building-a-multibranch-pipeline-project')
+            echo 'another one.'
           }
         }
 
       }
     }
 
-    stage('') {
+    stage('error') {
       steps {
         sh '''#!/bin/sh
 # This is a comment!
