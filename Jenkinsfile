@@ -24,9 +24,9 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('error') {
       steps {
-        echo 'Step #two'
+        echo 'Step two'
       }
     }
 
