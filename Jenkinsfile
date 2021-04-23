@@ -9,15 +9,15 @@ pipeline {
           }
         }
 
-        stage('test') {
-          steps {
-            timestamps()
-          }
-        }
-
         stage('finalstep.') {
           steps {
             echo 'Wow, that was easy.'
+          }
+        }
+
+        stage('') {
+          steps {
+            dir(path: '/home/ec2-user/github/building-a-multibranch-pipeline-project')
           }
         }
 
